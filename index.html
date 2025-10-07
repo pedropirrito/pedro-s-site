@@ -30,9 +30,17 @@
 </head>
 <body>
   <img src="Title.gif"><div class="play-link"><a href="about.html">About me</a><div class="play-link"><a href="updates.html">UPDATE LOGS</a></div>
-
-
-  
+    <script src="path/to/ruffle.js"></script>
+  <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
+<div id="flash-container"></div>
+<script>
+  window.addEventListener("load", () => {
+    const ruffle = window.RufflePlayer.newest();
+    const player = ruffle.createPlayer();
+    document.getElementById("flash-container").appendChild(player);
+    player.load("musical.swf");
+  });
+</script>
   <p>WELCOME TO MY SITE!!! :3</p>
 
   <div class="title">Maez >>>>> <div class="play-link"><a href="Maez.html">Play It!</a></div></div>
@@ -60,6 +68,7 @@
 </body>
 
 </html>
+
 
 
 
